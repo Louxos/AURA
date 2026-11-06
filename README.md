@@ -36,8 +36,14 @@ AURA is designed primarily for private, personal use.
 
 Sensitive credentials, API keys and authentication tokens are kept locally and must never be committed to the repository.
 
-## 🚧 Status
+## 🗄️ Status
 
-**Private project — In development**
+**Project archived — 6 November 2026**
+
+Development has stopped permanently. Nothing here is maintained: no new features, no fixes, no
+releases. The repository stays as it was left, as an archive of what was specified.
+
+The archive page is published with GitHub Pages: <https://louxos.github.io/AURA/>
+(it is served from the `docs/` folder of this repository).
 
 This repository is not intended for public distribution.
