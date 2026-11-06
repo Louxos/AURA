@@ -1,0 +1,31 @@
+# Secrets — AURA est archivé, mais ces règles restent : le dépôt a déjà eu des clés
+# en clair une fois, il ne doit pas recommencer.
+.env
+.env.*
+!.env.example
+
+# Matériel de clé et fichiers de credentials
+*.key
+*.pem
+*.p12
+*.pfx
+client_secret*.json
+credentials*.json
+secrets.*
+token*.json
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Outils et système
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

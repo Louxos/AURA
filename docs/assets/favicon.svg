@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="AURA">
   <defs>
     <linearGradient id="g" x1="7" y1="5" x2="26" y2="28" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#a394ff" />
-      <stop offset="0.55" stop-color="#7c5cff" />
-      <stop offset="1" stop-color="#389cff" />
+      <stop offset="0" stop-color="#ffc46b" />
+      <stop offset="0.5" stop-color="#ff5a45" />
+      <stop offset="1" stop-color="#b3122b" />
     </linearGradient>
   </defs>
-  <rect width="32" height="32" rx="8" fill="#0b0b12" />
+  <rect width="32" height="32" rx="8" fill="#0a0607" />
   <circle cx="16" cy="16" r="6.4" fill="none" stroke="url(#g)" stroke-width="1.9" />
   <ellipse
     cx="16"
@@ -15,7 +15,7 @@
     ry="5.4"
     fill="none"
     stroke="url(#g)"
-    stroke-opacity="0.55"
+    stroke-opacity="0.6"
     stroke-width="1.4"
     transform="rotate(-22 16 16)"
   />
