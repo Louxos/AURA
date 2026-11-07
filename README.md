@@ -1,77 +1,73 @@
 # AURA
 
-> **Personal AI assistant for Windows — archived**
+![Statut : archivé](https://img.shields.io/badge/statut-archiv%C3%A9-b3122b?style=flat-square&labelColor=0a0607)
+![Version : aucune](https://img.shields.io/badge/version-aucune-ff4a3a?style=flat-square&labelColor=0a0607)
 
-**Archived on 6 November 2026.** Development has stopped permanently: no new features, no fixes, no
-releases, no support. This repository is left as it was, as an archive of what was specified.
+> [!CAUTION]
+> **Projet archivé le 6 novembre 2026.** Développement arrêté définitivement : aucune nouvelle
+> fonctionnalité, aucun correctif, aucune version publiée, aucun support. Le dépôt reste figé, en
+> lecture seule, comme archive de ce qui a été écrit.
+> **Avis complet : [ARCHIVED.md](ARCHIVED.md).**
 
-📄 **Archive page: <https://louxos.github.io/AURA/>**
+> **Assistant IA personnel pour Windows**
 
-## 🗄️ Status
+AURA était pensé comme un centre de contrôle personnel sur Windows : la voix, l'IA, les services
+Google et les outils système réunis dans une seule application privée, local-first.
+**Il n'a jamais été publié** — ni version, ni installateur, ni binaire.
 
-AURA was designed as a private, local-first AI assistant and control center for Windows: voice
-interaction, AI conversations, Google services and Windows system tools in a single local
-application. It was never released — not a single version, not an installer, no binaries.
+## 🗄️ Statut
 
-What is left in this repository is the intent: this README and the static archive site in `docs/`.
+| | |
+| --- | --- |
+| Archivé le | 6 novembre 2026 |
+| Version publiée | Aucune |
+| Développement | Arrêté définitivement |
+| Dépôt | Figé, en lecture seule |
 
-## 🔐 Credentials and secrets
+Ce dépôt ne contient pas de code exécutable : il ne garde que l'intention du produit, ce README et
+l'[avis d'archivage](ARCHIVED.md). Aucun site n'est publié et aucun service n'est en ligne.
 
-AURA was built around secrets that were never supposed to live in Git: API keys, OAuth tokens and
-account identifiers all belonged in a local `.env` file.
+## 🔐 Identifiants et secrets
 
-The specification document that used to sit at the root of this repository (`prompt`) contained API
-keys in plaintext. **It was deleted when the project was archived**, and no key is reproduced on the
-archive page.
+Les clés d'API, jetons OAuth et identifiants de compte n'auraient jamais dû vivre dans Git : leur
+place était dans un `.env` local.
 
-- Those keys must be treated as compromised and revoked at the provider.
-- Deleting the file does not remove it from Git history (see commit `a6e6706`). If this repository is
-  ever made public, the history has to be purged or rewritten first — a redacted version of the
-  document is the only safe way to republish it.
-- A `.gitignore` now keeps local `.env` files and key material out of the repository.
+Le cahier des charges qui décrivait AURA (`prompt`) contenait des **clés d'API en clair**. Il a été
+**supprimé du dépôt à l'archivage**, et aucune clé n'est reproduite dans ce dépôt.
 
-## ✨ What was planned
+- Ces clés doivent être considérées comme **compromises** et révoquées chez le fournisseur.
+- Les supprimer du fichier ne les retire pas de l'historique Git (commit `a6e6706`) : si ce dépôt
+  devient public, l'historique doit être purgé ou réécrit avant, et le document republié uniquement
+  sous une forme expurgée.
+- Le [`.gitignore`](.gitignore) empêche désormais qu'un `.env` ou du matériel de clé revienne ici.
 
-Kept as history — none of it was released.
+## ✨ Ce qui était prévu
 
-* 🎙️ Voice interaction
-* 🧠 AI-powered conversations
-* 📧 Gmail integration
-* 📅 Google Calendar integration
-* 💻 Windows system control
-* 📁 Local file management
-* 🧠 Local memory
-* 🔔 Windows notifications
-* 🌐 Web capabilities
-* 🔐 Secure Google OAuth authentication
-* ⚙️ Custom tools and commands
+Conservé comme historique — rien de tout cela n'a été publié.
 
-## 🏗️ Technology
+* 🎙️ Interaction vocale
+* 🧠 Conversations IA
+* 📧 Intégration Gmail
+* 📅 Intégration Google Agenda
+* 💻 Contrôle du système Windows
+* 📁 Gestion de fichiers locaux autorisés
+* 🧠 Mémoire locale
+* 🔔 Notifications Windows
+* 🌐 Capacités Web
+* 🔐 Authentification Google OAuth sécurisée
+* ⚙️ Outils et commandes personnalisés
+
+## 🏗️ Technique
 
 * Python
-* Gemini API / Groq / OpenRouter
-* Google APIs
+* API Gemini / Groq / OpenRouter
+* API Google
 * Google OAuth 2.0
 * SQLite
-* Windows APIs
-* Local speech technologies
+* API Windows
+* Technologies vocales locales
 
-## 📄 Archive site
+## 🔒 Confidentialité
 
-The GitHub Pages site lives in [`docs/`](docs/):
-
-| File | Role |
-| --- | --- |
-| `docs/index.html` | Archive page: state, intent, why it stopped, what remains |
-| `docs/404.html` | Not-found page |
-| `docs/assets/site.css` | Single stylesheet, red charte, no external resource |
-| `docs/assets/favicon.svg` | AURA mark |
-
-Publish it with **Settings → Pages → Deploy from a branch**, branch `main`, folder `/docs`.
-Note that this repository is private: a site published from a private repository is only reachable
-with a plan that allows it, or by making the repository public.
-
-## 🔒 Privacy
-
-AURA was designed primarily for private, personal use. Sensitive credentials, API keys and
-authentication tokens were meant to stay local and never be committed to the repository.
+AURA était conçu pour un usage privé et personnel. Les identifiants, clés d'API et jetons
+d'authentification devaient rester en local et ne jamais être versionnés.
