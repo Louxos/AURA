@@ -50,10 +50,14 @@ place était dans un `.env` local.
 Le cahier des charges qui décrivait AURA (`prompt`) contenait des **clés d'API en clair**. Il a été
 **supprimé du dépôt à l'archivage**, et aucune clé n'est reproduite dans ce dépôt.
 
-- Ces clés doivent être considérées comme **compromises** et révoquées chez le fournisseur.
-- Les supprimer du fichier ne les retire pas de l'historique Git (commit `a6e6706`). **Le passage du
-  dépôt en public doit donc être précédé d'une purge de l'historique** : tant qu'il est privé, rien
-  n'est exposé ; dès qu'il devient public, l'ancien document et ses clés le deviennent aussi.
+- Ces clés doivent être considérées comme **compromises** et révoquées chez le fournisseur : aucune
+  réécriture d'historique ne les invalide.
+- **L'historique a été réécrit le 6 novembre 2026** (`git filter-repo --invert-paths --path prompt`) :
+  le fichier n'existe plus dans aucun commit. L'ancien historique `a6e6706…bb1870e` est remplacé par
+  `b243e61…80588f9`.
+- GitHub garde les objets devenus inaccessibles pendant un certain temps, et `main` pointe encore sur
+  l'ancien commit : le dépôt ne doit pas être passé en public avant que `main` ne soit forcé sur
+  l'historique nettoyé.
 - Le [`.gitignore`](.gitignore) empêche désormais qu'un `.env` ou du matériel de clé revienne ici.
 
 ## ✨ Ce qui était prévu

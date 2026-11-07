@@ -56,10 +56,10 @@ défaut, et des outils qui n'agissent qu'une fois autorisés.
 Le cahier des charges qui décrivait AURA (`prompt`) contenait des **clés d'API en clair**. Il a été
 **supprimé du dépôt à l'archivage**.
 
-- Ces clés doivent être considérées comme **compromises** et révoquées chez le fournisseur.
-- Les supprimer du fichier ne les retire pas de l'historique Git (commit `a6e6706`) : si ce dépôt
-  devient public, l'historique doit être purgé ou réécrit avant, et le document republié uniquement
-  sous une forme expurgée.
+- Ces clés doivent être considérées comme **compromises** et révoquées chez le fournisseur : aucune
+  réécriture d'historique ne les invalide.
+- **L'historique a été réécrit le 6 novembre 2026** : le fichier `prompt` n'existe plus dans aucun
+  commit (ancien historique `a6e6706…bb1870e` remplacé par `b243e61…80588f9`).
 - Un [`.gitignore`](.gitignore) empêche désormais qu'un `.env` ou du matériel de clé revienne dans le
   dépôt.
 
