@@ -7,7 +7,7 @@
 > **Projet archivé le 6 novembre 2026.** Développement arrêté définitivement : aucune nouvelle
 > fonctionnalité, aucun correctif, aucune version publiée, aucun support. Le dépôt reste figé, en
 > lecture seule, comme archive de ce qui a été écrit.
-> **Avis complet : [ARCHIVED.md](ARCHIVED.md).**
+> **Avis complet : [ARCHIVED.md](ARCHIVED.md) — page d'archive : <https://louxos.github.io/AURA/>.**
 
 > **Assistant IA personnel pour Windows**
 
@@ -24,8 +24,23 @@ Google et les outils système réunis dans une seule application privée, local-
 | Développement | Arrêté définitivement |
 | Dépôt | Figé, en lecture seule |
 
-Ce dépôt ne contient pas de code exécutable : il ne garde que l'intention du produit, ce README et
-l'[avis d'archivage](ARCHIVED.md). Aucun site n'est publié et aucun service n'est en ligne.
+Ce dépôt ne contient pas de code exécutable : il ne garde que l'intention du produit, ce README,
+l'[avis d'archivage](ARCHIVED.md) et la page d'archive publiée par GitHub Pages.
+Aucun service n'est en ligne, aucun exécutable n'est distribué.
+
+## 📄 Page d'archive
+
+<https://louxos.github.io/AURA/>
+
+| Fichier | Rôle |
+| --- | --- |
+| [`docs/index.html`](docs/index.html) | Page d'archive : état du projet, ce qu'AURA devait être, pourquoi l'arrêt, ce qui reste |
+| [`docs/404.html`](docs/404.html) | Page introuvable, dans la même charte |
+| [`docs/assets/site.css`](docs/assets/site.css) | Feuille de styles unique, aucune ressource distante |
+| [`docs/assets/favicon.svg`](docs/assets/favicon.svg) | Marque AURA |
+
+Publication : **Settings → Pages → Deploy from a branch**, branche `main`, dossier `/docs`.
+Le dépôt doit être public pour que le site soit accessible.
 
 ## 🔐 Identifiants et secrets
 
@@ -36,9 +51,9 @@ Le cahier des charges qui décrivait AURA (`prompt`) contenait des **clés d'API
 **supprimé du dépôt à l'archivage**, et aucune clé n'est reproduite dans ce dépôt.
 
 - Ces clés doivent être considérées comme **compromises** et révoquées chez le fournisseur.
-- Les supprimer du fichier ne les retire pas de l'historique Git (commit `a6e6706`) : si ce dépôt
-  devient public, l'historique doit être purgé ou réécrit avant, et le document republié uniquement
-  sous une forme expurgée.
+- Les supprimer du fichier ne les retire pas de l'historique Git (commit `a6e6706`). **Le passage du
+  dépôt en public doit donc être précédé d'une purge de l'historique** : tant qu'il est privé, rien
+  n'est exposé ; dès qu'il devient public, l'ancien document et ses clés le deviennent aussi.
 - Le [`.gitignore`](.gitignore) empêche désormais qu'un `.env` ou du matériel de clé revienne ici.
 
 ## ✨ Ce qui était prévu

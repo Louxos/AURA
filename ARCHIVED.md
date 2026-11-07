@@ -7,6 +7,7 @@
 > **Ce projet est désormais archivé.** Développement arrêté définitivement le 6 novembre 2026.
 > Aucune nouvelle fonctionnalité, aucun correctif, aucune version publiée, aucun support.
 > Rien n'a été supprimé pour autant : ce dépôt reste figé, en lecture seule, comme archive.
+> **Page d'archive : <https://louxos.github.io/AURA/>**
 
 ## État du projet
 
@@ -64,6 +65,7 @@ Le cahier des charges qui décrivait AURA (`prompt`) contenait des **clés d'API
 
 ## Ce qui reste
 
+- La [page d'archive](https://louxos.github.io/AURA/) : l'état du projet, en une page.
 - Le [README](README.md) : l'intention, la pile technique, les limites annoncées.
 - L'historique des commits, conservé tel quel.
 
